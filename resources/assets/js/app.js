@@ -15,8 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import {ServerTable,ClientTable} from 'vue-tables-2';
+Vue.use(ClientTable,{},false,'bootstrap4','default');
+Vue.use(ServerTable,{},false,'bootstrap4','default');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
 const app = new Vue({
     el: '#app'
 });
